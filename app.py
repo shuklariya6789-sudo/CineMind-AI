@@ -77,7 +77,7 @@ def render_html(markup):
     st.markdown(flat, unsafe_allow_html=True)
 
 
-def show_loading_screen(logo_path, seconds=4.0):
+def show_loading_screen(logo_path, seconds=2.2):
     """Show a full-screen splash using the app logo, once per browser
     session. Relies on the .loading-screen / .loader-* CSS classes
     defined in the global stylesheet, so this must run after the CSS
@@ -459,7 +459,7 @@ st.markdown("""
     background:
         radial-gradient(circle at 50% 35%, rgba(168,85,247,.14), transparent 55%),
         var(--bg);
-    animation: loaderFadeOut .6s ease 4s forwards;
+    animation: loaderFadeOut .6s ease 2.2s forwards;
 }
 
 .loader-content {
@@ -531,7 +531,7 @@ st.markdown("""
 .loader-bar-fill {
     height: 100%;
     background: linear-gradient(90deg, #ff4f70, #a855f7);
-    animation: barFill 2.9s ease 1.1s forwards;
+    animation: barFill 2s ease 1.1s forwards;
 }
 
 html, body, [class*="css"] {
